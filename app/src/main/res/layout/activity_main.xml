@@ -1,33 +1,68 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <ImageView
         android:id="@+id/photo_image_view"
-        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         android:src="@drawable/androidparty" />
-    <TextView
-        android:text="Happy Birthday Friend"
-        android:id="@+id/happy_birthday"
-        android:textSize="32sp"
-        android:padding="20dp"
-        android:textColor="@android:color/white"
-        android:fontFamily="sans-serif-light"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <TextView
-        android:text="From your friend"
-        android:textSize="32sp"
-        android:padding="20dp"
-        android:textColor="@android:color/white"
-        android:fontFamily="sans-serif-light"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:id="@+id/happy_birthday"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="Happy Birthday Friend"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="QUANTITY"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="300dp"
+        android:text="Order"
+        android:textSize="32sp"
+        android:onClick="submitOrder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="From your friend"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
 </RelativeLayout>
