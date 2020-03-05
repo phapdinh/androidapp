@@ -14,17 +14,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        display(quantity);
+        displayPrice(quantity * price);
     }
     private int price = 5;
-    private int quantity = 0;
+    private int quantity = 2;
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(++quantity);
         displayPrice(quantity * price);
     }
 
+    public void increment(View view) {
+        display(++quantity);
+    }
+
+    public void decrement(View view) {
+        display(--quantity);
+    }
     /**
      * This method displays the given quantity value on the screen.
      */
